@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prague Old Town Square Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        .gallery img {
+            width: 600px; /* Adjust width of each image */
+            height: 400px; /* Adjust height of each image */
+            object-fit: cover; /* Maintain aspect ratio and cover area */
+            margin-right: 20px; /* Space between images */
+        }
+        .accommodation-details {
+            margin-bottom: 20px;
+        }
+        .amenities {
+            margin-bottom: 20px;
+        }
+    </style>
+     <!-- Favicon-->
+   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+   <!-- Font Awesome icons (free version)-->
+   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+       crossorigin="anonymous"></script>
+   <!-- Google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+       rel="stylesheet" type="text/css" />
+   <link
+       href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+       rel="stylesheet" type="text/css" />
+   <!-- Core theme CSS (includes Bootstrap)-->
+   <link href="css/index-styles.css" rel="stylesheet" />
+
+
+</head>
+<body>
+     <!-- Navigation Bar -->
+    <nav
+    class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+    id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">accommodation Reservation System</a>
+        <button
+            class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+            type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a
+                    class="nav-link py-3 px-0 px-lg-3 rounded" href="index.jsp">Home</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a
+                    class="nav-link py-3 px-0 px-lg-3 rounded" href="index.jsp">Accommodations</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a
+                    class="nav-link py-3 px-0 px-lg-3 rounded" href="index.jsp">About</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a
+                    class="nav-link py-3 px-0 px-lg-3 rounded" href="index.jsp">Contact</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 style="margin-top: 150px; padding-bottom: 20px;">Prague Old Town Square Hotel</h1>
+            <div class="gallery">
+                <img src="Prague Old Town Square Hotel.jpg" alt="Prague Old Town Square Hotel Image 1">
+                <img src="Prague Old Town Square Hotel.jpg" alt="Prague Old Town Square Hotel Image 2">
+                <img src="Prague Old Town Square Hotel.jpg" alt="Prague Old Town Square Hotel Image 3">
+            </div>
+            <div class="accommodation-details">
+                <h2>Description</h2>
+                <p>Experience the magic of Prague from this luxurious hotel located right on the historic Old Town Square. With elegant rooms and modern amenities, your stay will be both comfortable and unforgettable.</p>
+                <p>Size: 1400 sq ft</p>
+                <p>Bedrooms: 2</p>
+                <p>Bathrooms: 2</p>
+                <p>Max Guests: 4</p>
+                <p>Price per night: $800</p>
+            </div>
+            <div class="amenities">
+                <h2>Amenities</h2>
+                <ul>
+                    <li>Historic location</li>
+                    <li>Modern interiors</li>
+                    <li>Fully equipped kitchen</li>
+                    <li>Complimentary breakfast</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Close to major attractions</li>
+                </ul>
+            </div>
+            <div class="booking-form">
+                <h2>Book Your Stay</h2>
+                <form action="#" method="post">
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="4" required>
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
